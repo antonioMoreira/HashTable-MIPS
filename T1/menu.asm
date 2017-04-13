@@ -21,7 +21,7 @@ str_arrow:	.asciiz "-> "
 		syscall # chamada de sistema 
 	.end_macro
 	
-	#Printa uma string generica
+	#Printa um inteiro generico
 	.macro printInt(%int)
 		li $v0,1 # Print Int
 		move $a0,%int # copia o conteudo do registrador %int
